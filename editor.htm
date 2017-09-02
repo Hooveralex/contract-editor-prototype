@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Contract Editor</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/numbering.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Title</a>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Link</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<div id="outline">
+						<ul class="list-unstyled">
+							<li class="outline-item" data-clause="clause-1"><span class="outline-item-content">Preamble</span></li>
+							<li class="outline-item" data-clause="clause-2"><span class="outline-item-content">Purpose</span></li>
+							<li class="outline-item" data-clause="clause-3"><span class="outline-item-content">Confidentiality</span></li>
+							<li class="outline-item" data-clause="clause-4"><span class="outline-item-content">No Disclosure of Discussions</span></li>
+							<li class="outline-item" data-clause="clause-5"><span class="outline-item-content">Term</span></li>
+							<li class="outline-item" data-clause="clause-6"><span class="outline-item-content">Representations</span></li>
+							<li class="outline-item" data-clause="clause-7"><span class="outline-item-content">Warranties</span></li>
+							<li class="outline-item" data-clause="clause-8"><span class="outline-item-content">Acknowledgements</span></li>
+							<li class="outline-item" data-clause="clause-9"><span class="outline-item-content">Standard of Care</span></li>
+							<li class="outline-item" data-clause="clause-10"><span class="outline-item-content">No Modification of Confidential Information</span></li>
+							<li class="outline-item" data-clause="clause-11"><span class="outline-item-content">Return upon Request</span></li>
+							<li class="outline-item" data-clause="clause-12"><span class="outline-item-content">Notice of Disclosure</span></li>
+							<li class="outline-item" data-clause="clause-13"><span class="outline-item-content">Indemnification</span></li>
+							<li class="outline-item" data-clause="clause-14"><span class="outline-item-content">Termination</span></li>
+							<li class="outline-item" data-clause="clause-15"><span class="outline-item-content">Definitions</span></li>
+							<li class="outline-item" data-clause="clause-16"><span class="outline-item-content">General</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-17"><span class="outline-item-content">Entire Agreement</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-18"><span class="outline-item-content">Amendment</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-19"><span class="outline-item-content">Assignment</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-20"><span class="outline-item-content">No Partnership</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-21"><span class="outline-item-content">Third Party Beneficiaries</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-22"><span class="outline-item-content">Acknowledgement of Contract Terms</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-23"><span class="outline-item-content">Notices</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-24"><span class="outline-item-content">Equitable Relief</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-25"><span class="outline-item-content">Remedies Cumulative</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-26"><span class="outline-item-content">Survival</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-27"><span class="outline-item-content">Severability</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-28"><span class="outline-item-content">Waiver</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-29"><span class="outline-item-content">Governing Law</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-30"><span class="outline-item-content">Waiver of Jury Trial</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-31"><span class="outline-item-content">Attorney Fees</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-32"><span class="outline-item-content">Interpretation</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-33"><span class="outline-item-content">Counterparts</span></li>
+							<li class="outline-item outline-item-child" data-clause="clause-34"><span class="outline-item-content">Effective Date</span></li>
+							<li class="outline-item" data-clause="clause-35"><span class="outline-item-content">Signature Block</span></li>
+						</ul>
+					</div>
+					<div id="non-editor">
+						<div class="clause-controls hidden text-right">
+							<span class="badge changes-pending">Changes Pending</span>
+							<ul class="nav">
+								<li class="">
+									<a class="clause-control-item save-clause-draft" data-toggle="modal" data-target="#saveWarning">
+										<i class="fa fa-folder-open-o"></i>
+										Save Draft
+									</a>
+								</li>
+								<li class="">
+									<a class="clause-control-item save-clause-publish" data-toggle="modal" data-target="#saveWarning">
+										<i class="fa fa-cloud-upload"></i>
+										Publish
+									</a>
+								</li>
+								<li>
+									<a class="clause-control-item clause-advanced" data-toggle="modal" data-target="#advancedClause">
+										<i class="fa fa-sliders"></i>
+										Advanced
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+					<div id="editor">
+						<label class="clause-label" for="clause-1">Preamble</label>
+						<div class="clause clause-saved" id="clause-1" data-heading="Preamble">
+							<p class="title"><strong>Non-Disclosure Agreement</strong></p>
+											
+							<p>This Non-Disclosure Agreement is made on [EFFECTIVE DATE] (the "<strong>Effective Date</strong>") between [PARTY ONE NAME], a [PARTY ONE CORP JURIS] corporation with its principal place of business at [PARTY ONE ADDRESS], and [PARTY TWO NAME], [whose principal place of residence is at/a [PARTY TWO CORP JURIS] corporation with its principal place of business at] [PARTY TWO ADDRESS].</p>
+							
+							<p>The parties agree as follows:</p>
+						</div>
+						
+						<label class="clause-label" for="clause-2">Purpose</label>
+						<div class="clause clause-unsaved" id="clause-2" data-heading="Purpose">
+							<p class="L1 numbered"><b>Purpose</b>. The parties agree to exchange Confidential Information for the purpose of [DESCRIBE PURPOSE] in accordance with the terms of this agreement.</p>
+						</div>
+
+						<label class="clause-label"> Confidentiality</label>
+						<div class="clause-unsynced" id="clause-3" data-heading="Confidentiality">
+							
+						</div>
+						
+						<label class="clause-label">No Disclosure of Discussions</label>
+						<div class="clause clause-saved" id="clause-4" data-heading="No Disclosure of Discussions">
+							<p class="L1 numbered">No Disclosure of Discussions. Neither party nor its Authorized Representatives may, without the other party's prior written consent, disclose the fact that</p>
+							<p class="L2 numbered">any discussions have taken place or are taking place concerning a potential business transaction or relationship between the parties, or that</p>
+							<p class="L2 numbered">any Confidential Information has been or may be disclosed between the parties.</p>
+						</div>
+						
+						<label class="clause-label">Term</label>
+						<div class="clause clause-saved clause-draft" id="clause-5" data-heading="Term">
+							<p class="L1 numbered"> <b>Term</b>. This agreement will begin on the Effective Date and continue for a period of [RESTRICTED DISCLOSURE PERIOD] years.</p>
+						</div>
+						
+						<label class="clause-label">Representations</label>
+						<div class="clause clause-saved" id="clause-6" data-heading="Representations">
+							<p class="L1 numbered"> <b>Representations</b>. Each party represents and warrants to the other party as follows, acknowledging that the other party is relying on these representations and warranties:</p>
+							<p class="L2 numbered"> <b>No Conflicts</b>. Neither party is under any restriction or obligation that may affect the performance of its obligations under this agreement.</p>
+							<p class="L2 numbered"> <b>Right to Disclose</b>. Each party has the right to disclose the Confidential Information to the other party under the terms of this agreement.</p>
+							<p class="L2 numbered"> <b>No Violations</b>. The disclosing party's disclosure of Confidential Information to the receiving party under this agreement will not violate any proprietary rights of, or any contractual obligations that the disclosing party may owe to, any third party.</p>
+						</div>
+						
+						<label class="clause-label">Warranties</label>
+						<div class="clause clause-saved" id="clause-7" data-heading="Warranties">
+							<p class="L1 numbered"> <b>Warranties</b></p>
+							<p class="L2 numbered"> [<b>No Warranty</b>. The Confidential Information is provided "as is." The disclosing party does not make any warranty as to its accuracy or completeness.] OR [<strong>Accuracy and Completeness</strong>. The disclosing party warrants that the Confidential Information is accurate and complete as of the date of disclosure.]</p>
+						</div>
+						
+						<label class="clause-label">Acknowledgements</label>
+						<div class="clause clause-saved" id="clause-8" data-heading="Acknowledgements">
+							<p class="L1 numbered"> <b>Acknowledgements</b></p>
+							<p class="L2 numbered"> <b>Ownership of Intellectual Property</b>. The receiving party acknowledges that all intellectual property rights in and to any Confidential Information that is disclosed to it are and will remain the disclosing party's exclusive property.</p>
+							<p class="L2 numbered"> <b>No Obligations</b>. Neither party has any obligation under this agreement to purchase from or provide to the other party any products or services, or to enter into any other agreement.</p>
+						</div>
+						
+						<label class="clause-label">Standard of Care</label>
+						<div class="clause clause-saved" id="clause-9" data-heading="Standard of Care">
+							<p class="L1 numbered"> <b>Standard of Care</b>. In protecting the Confidential Information, the receiving party shall exercise at least the same degree of care as it uses with its own Confidential Information, but in no event less than reasonable care.</p>
+						</div>
+						
+						<label class="clause-label">No Modification of Confidential Information</label>
+						<div class="clause clause-saved" id="clause-10" data-heading="No Modification of Confidential Information">
+							<p class="L1 numbered"> <b>No Modification of Confidential Information</b>. The receiving party shall not copy, decompile, modify, reverse engineer, or create derivative works out of any Confidential Information.</p>
+						</div>
+						
+						<label class="clause-label">Return upon Request</label>
+						<div class="clause clause-saved" id="clause-11" data-heading="Return upon Request">
+							<p class="L1 numbered"> <b>Return upon Request</b>. At the disclosing party's request, the receiving party shall promptly either destroy or return to the disclosing party all Confidential Information in its possession.</p>
+						</div>
+						
+						<label class="clause-label">Notice of Disclosure</label>
+						<div class="clause clause-saved" id="clause-12" data-heading="Notice of Disclosure">
+							<p class="L1 numbered"> <b>Notice of Disclosure</b>. The receiving party shall immediately give Notice to the disclosing party upon its becoming aware of any loss or unauthorized disclosure of any of the Confidential Information.</p>
+						</div>
+						
+						<label class="clause-label">Indemnification</label>
+						<div class="clause clause-saved" id="clause-13" data-heading="Indemnification">
+							<p class="L1 numbered"> <b>Indemnification</b></p>
+							<p class="L2 numbered">&nbsp;<strong>Mutual Indemnity.&nbsp;</strong>The receiving party shall indemnify the disclosing party[ and its directors, officers, employees, shareholders, partners, agents, and Affiliates,] against all claims, liability, costs, and expenses (including attorneys' fees) arising from any third party claim or proceeding brought against the disclosing party that relates to or arises out of any disclosure of Confidential Information by the receiving party or its Authorized Representatives in breach of this agreement.</p>
+						</div>
+						
+						<label class="clause-label">Termination</label>
+						<div class="clause clause-saved" id="clause-14" data-heading="Termination">
+							<p class="L1 numbered"> <b>Termination</b></p>
+							<p class="L2 numbered"> <b>Termination upon Notice</b>. Either party may terminate this agreement for any reason or for no reason upon [TERMINATION FOR CONVENIENCE NOTICE] business days' Notice to the other party.</p>
+							
+							<p class="L2 numbered"> <b>Termination upon Breach</b>. If one party</p>
+							<p class="L3 numbered"> commits any material breach or material default in the performance of any obligation under this agreement other than the unauthorized disclosure of Confidential Information, and the breach or default continues for a period of [CURE PERIOD] business days after the other party delivers Notice to it reasonably detailing the breach or default, or</p>
+							<p class="L3 numbered"> discloses Confidential Information in any manner that is not authorized under this agreement,</p>
+							
+							<p class="L2 numbered">then the other party may terminate this agreement, with immediate effect, by giving Notice to the other party.</p>
+							<p class="L2 numbered"> <b>Return of Property</b>. Upon termination[ or expiration] of this agreement, the receiving party shall, at the disclosing party's option, either return to the disclosing party or destroy all property belonging to the disclosing party, both originals and copies, under its direct or indirect control. If the disclosing party requires its destruction, it may also require the receiving party to provide a certificate to that effect.</p>
+						</div>
+
+						<label class="clause-label">Definitions</label>
+						<div class="clause clause-saved" id="clause-15" data-heading="Definitions">
+							<p class="L1 numbered"> <b>Definitions</b>. In addition to the terms defined above, the following definitions apply:</p>
+							<p class="L2 numbered"> "<strong>Affiliate</strong>" of any Person means, at the time the determination is made, any other Person that, directly or indirectly, Controls, is Controlled by, or is under common Control with that Person.</p>
+							<p class="L2 numbered"> "<strong>Notice</strong>" means any notice, request, direction, or other document that a party can or must make or give under this agreement.</p>
+							
+							<p class="L2 numbered"> "<strong>Person</strong>" includes</p>
+							<p class="L3 numbered"> any corporation, company, limited liability company, partnership, Governmental Authority, joint venture, fund, trust, association, syndicate, organization, or other entity or group of persons, whether incorporated or not, and</p>
+							<p class="L3 numbered"> any individual.</p>
+							
+							<p class="L2 numbered"> "<strong>Purpose</strong>" has the meaning given to that term in section 1 (Purpose).</p>
+							
+							<p class="L2 numbered"> "<strong>Representative</strong>" means, for any Person,</p>
+							<p class="L3 numbered"> each director, officer, shareholder, partner, employee, agent, or professional advisor[ in connection with the transactions contemplated in this agreement], and any other authorized representative, and</p>
+							<p class="L3 numbered"> that Person's Affiliates and the directors, officers, shareholders, partners, employees, agents, or professional advisors[ in connection with the transactions contemplated in this agreement] of those Affiliates.</p>
+						</div>
+
+						<div class="clause-section">
+							<label class="clause-label">General Provisions</label>
+							<div class="clause clause-saved clause-section-head" id="clause-16">
+								<p class="L1 numbered"> <b>General</b></p>
+							</div>
+
+							<label class="clause-label">Entire Agreement</label>
+							<div class="clause clause-saved" id="clause-17">
+								<p class="L2 numbered"> <b>Entire Agreement</b>. This agreement contains all the terms agreed to by the parties relating to its subject matter. It replaces all previous discussions, understandings, and agreements.</p>
+							</div>
+
+							<label class="clause-label">Amendment</label>
+							<div class="clause clause-saved" id="clause-18">
+								<p class="L2 numbered"> <b>Amendment</b>. This agreement may only be amended by a written document signed by both parties.</p>
+							</div>
+
+							<label class="clause-label">Assignment</label>
+							<div class="clause clause-saved" id="clause-19">
+								<p class="L2 numbered"> <b>Assignment</b>. Neither party may assign this agreement or any of their rights or obligations under this agreement without the prior written consent of the other party.</p>
+							</div>
+
+							<label class="clause-label">No Partnership</label>
+							<div class="clause clause-saved" id="clause-20">
+								<p class="L2 numbered"> <b>No Partnership</b>. Nothing contained in this agreement creates a partnership, joint venture,[ employer/employee,] principal-and-agent, or any similar relationship between the parties.</p>
+							</div>
+
+							<label class="clause-label">Third Party Beneficiaries</label>
+							<div class="clause clause-saved" id="clause-21">
+								<p class="L2 numbered"> <b>Third Party Beneficiaries</b>. The Indemnification terms of this agreement confer rights and remedies upon the receiving party's directors, officers, employees, shareholders, partners, agents or Affiliates. No Person other than the parties themselves and those beneficiaries has any rights or remedies under this agreement.</p>
+							</div>
+							
+							<label class="clause-label">Acknowledgement of Contract Terms</label>
+							<div class="clause clause-saved" id="clause-22">
+								<p class="L2 numbered"> <b>Acknowledgement of Contract Terms</b>. [PARTY TWO] acknowledges that he or she</p>
+								<p class="L3 numbered"> has read the agreement,</p>
+								<p class="L3 numbered"> understands its terms,</p>
+								<p class="L3 numbered"> has had the opportunity to consult[ and has consulted] with independent legal counsel, and</p>
+								<p class="L3 numbered"> has signed this agreement voluntarily.]</p>
+							</div>
+							
+							<label class="clause-label">Notices</label>
+							<div class="clause clause-saved"  id="clause-23">
+								<p class="L2 numbered"> <b>Notices</b></p>
+								<p class="L3 numbered"> <b>Form of Notice</b>. All notices and other communications between the parties must be in writing.</p>
+								<p class="L3 numbered"> <b>Method of Notice</b>. Notices must be given by (i) personal delivery, (ii) a nationally-recognized, next-day courier service, (iii) first-class registered or certified mail, postage prepaid[, (iv) fax][ or (v) electronic mail] to the party's address specified in this agreement, or to the address that a party has notified to be that party's address for the purposes of this section.</p>
+								<p class="L3 numbered"> <b>Receipt of Notice</b>. A notice given in accordance with this agreement will be effective upon receipt by the party to which it is given or, if mailed, upon the earlier of receipt and the fifth business day following mailing.</p>
+							</div>
+							
+							<label class="clause-label">Equitable Relief</label>
+							<div class="clause clause-saved" id="clause-24">
+								<p class="L2 numbered"> <b>Equitable Relief</b>. Each party acknowledges that its breach or threatened breach of any its obligations under section 2 (Confidentiality) would not be susceptible to adequate relief by way of monetary damages only. Accordingly, the non-defaulting party may, in that case, apply to court for any applicable equitable remedies (including injunctive relief), without the need to post any security.</p>
+							</div>
+
+							<label class="clause-label">Remedies Cumulative</label>
+							<div class="clause clause-saved" id="clause-25">
+								<p class="L2 numbered"> <b>Remedies Cumulative</b>. The rights and remedies available to a party under this agreement are cumulative and in addition to, not exclusive of or in substitution for, any rights or remedies otherwise available to that party.</p>
+							</div>
+
+							<label class="clause-label">Survival</label>
+							<div class="clause clause-saved" id="clause-26">
+								<p class="L2 numbered"> <b>Survival</b>. Sections 2 (Confidentiality), 10 (Return upon Request), 13 (Indemnification), and 13.3 (Return of Property) survive the termination[ or expiration] of this agreement.</p>
+							</div>
+
+							<label class="clause-label">Severability</label>
+							<div class="clause clause-saved" id="clause-27">
+								<p class="L2 numbered"> <b>Severability</b>. If any part of this agreement is declared unenforceable or invalid, the remainder will continue to be valid and enforceable.</p>
+							</div>
+
+							<label class="clause-label">Waiver</label>
+							<div class="clause clause-saved" id="clause-28">
+								<p class="L2 numbered"> <b>Waiver</b>. A party's failure or neglect to enforce any of rights under this agreement will not be deemed to be a waiver of that party's rights.</p>
+							</div>
+
+							<label class="clause-label">Governing Law</label>
+							<div class="clause clause-saved" id="clause-29">
+								<p class="L2 numbered"> <b>Governing Law</b>. This agreement will be governed by and construed in accordance with the laws of the State of [GOVERNING LAW STATE ], without regard to its conflict of laws rules.</p>
+							</div>
+
+							<label class="clause-label">Waiver of Jury Trial</label>
+							<div class="clause clause-saved" id="clause-30">
+								<p class="L2 numbered"> <b>Waiver of Jury Trial</b>. Each party irrevocably waives its rights to trial by jury in any action or proceeding arising out of or relating to this agreement or the transactions relating to its subject matter.</p>
+							</div>
+
+							<label class="clause-label">Attorney Fees</label>
+							<div class="clause clause-saved" id="clause-31">
+								<p class="L2 numbered"> <b>Attorney Fees</b>. If either party brings legal action to enforce its rights under this agreement, the prevailing party will be entitled to recover its costs and expenses (including reasonable attorneys' fees) incurred in connection with the action and any appeal.</p>
+							</div>
+							
+							<label class="clause-label">Interpretation</label>
+							<div class="clause clause-saved" id="clause-32">
+								<p class="L2 numbered"> <b>Interpretation</b></p>
+								<p class="L3 numbered"> <b>Number and Gender</b>. Unless the context requires otherwise, words importing the singular number include the plural and vice versa; words importing gender include all genders.</p>
+								<p class="L3 numbered"> <b>Headings</b>. The headings used in this agreement and its division into articles, sections,[ schedules, exhibits, appendices,] and other subdivisions do not affect its interpretation.</p>
+								<p class="L3 numbered"> <b>Internal References</b>. References in this agreement to articles, sections, and other subdivisions are to those parts of this agreement.</p>
+							</div>
+							
+							<label class="clause-label">Counterparts</label>
+							<div class="clause clause-saved" id="clause-33">
+								<p class="L2 numbered"> <b>Counterparts</b>. This agreement may be signed in any number of counterparts, each of which is an original and all of which taken together form one single document.</p>
+							</div>
+
+							<label class="clause-label">Effective Date</label>
+							<div class="clause clause-saved" id="clause-34">
+								<p class="L2 numbered"> <b>Effective Date</b>. This agreement is effective as of the Effective Date, even if any signatures are made after that date.</p>
+							</div>
+						</div>
+
+						<label class="clause-label">Signature Block</label>
+						<div class="clause clause-saved"  id="clause-35" data-heading="Signature Block">
+							<p>This agreement has been signed by the parties.</p>
+							
+							<p>[PARTY ONE NAME]</p>
+							
+							<p>By:___________________________________</p>
+							
+							<p>Name:</p>
+							
+							<p>Title:</p>
+							
+							<p>Date:</p>
+							
+							<p>[PARTY TWO NAME]</p>
+							
+							<p>By:___________________________________</p>
+							
+							<p>Name:</p>
+							
+							<p>[Title:]</p>
+							
+							<p>Date:</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+			<div class="modal fade" id="saveWarning" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Save Clause</h4>
+					</div>
+					<div class="modal-body">
+						<p>This Clause may be synced with other agreements. Saving your changes here may create inconsistencies in other agreements.</p>
+						<p>To avoid inconsistencies, you can save this clause as a new alternative.</p>
+						<p>How do you want to proceed?</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success create-new-alt" data-toggle="modal" data-target="#createNewAlternative">+ New Alternative</button>
+						<button type="button" class="btn btn-default cancel-save" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-primary confirm-save">Save</button>
+					</div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="createClause" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">New Clause</h4>
+					</div>
+					<div class="modal-body">
+						<div>
+						    <div class="form-group form-group-sm">
+						    	<button class="btn btn-primary confirm-new-clause-draft">Save as Draft</button>
+						    	<button class="btn btn-success confirm-new-clause-publish">Save</button>
+						    	<button class="btn btn-default cancel-save">Cancel</button>
+						    </div>
+						    <div class="form-group form-group-sm"><label>Heading *</label><input class="form-control" type="text"></div>
+						    <div class="form-group form-group-sm"><label>Clause Taxonomy</label><input class="form-control" type="text"></div>
+						    <div class="form-group form-group-sm"><label>Status</label><select class="form-control"></select></div>
+						    <div class="form-group form-group-sm"><label>Filename *</label><input class="form-control" type="text"></div>
+						    <div class="form-group form-group-sm"><label>Description *</label><textarea class="form-control guidance-editor"></textarea></div>
+						    <div class="form-group form-group-sm">
+						    	<label>Key Question</label>
+								<input class="form-control" type="text">
+						    </div>
+						     <div class="form-group form-group-sm">
+						     	<label>Answer *  </label><a href="#">New</a>
+						     	<input class="form-control" type="text">
+						     </div>
+						    <div class="form-group form-group-sm">
+						    	<div class="row">
+						    		<div class="col-md-4">
+						    			<label>Contract Type</label>
+						    			<select class="form-control"></select>
+						    		</div>
+						    		<div class="col-md-4">
+						    			<label>Party Weight</label>
+						    			<select class="form-control"></select>
+						    		</div>
+						    		<div class="col-md-4">
+						    			<div class="checkbox">
+										  <label>
+										    <input type="checkbox" value="">
+										  Standard
+										  </label>
+										</div>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="form-group form-group-sm">
+						    	<label>Clause Language</label>
+						    	<textarea id="new-clause-text" class="form-control clause-editor">
+						    		<p class="L1 numbered"></p>
+						    	</textarea>
+						    </div>
+						    <div class="form-group form-group-sm"><label>Discussion</label><textarea class="form-control guidance-editor"></textarea></div>
+					    </div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="advancedClause" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Confidentiality</h4>
+					</div>
+					<div class="modal-body">
+				        <div>
+				        	<div class="form-group form-group-sm">
+				        		<button class="btn btn-sm btn-success confirm-new-alternative-publish">Sync</button>
+				        		<button class="btn btn-sm btn-default cancel-save">Cancel</button>
+				        		<span class="dropdown">
+				        			<button class="btn btn-sm btn-default" type="button" data-toggle="dropdown" aria-expanded="true"><i class="fa fa-cogs" aria-hidden="true"></i> More Options <i class="fa fa-caret-down"></i></button>
+				                    <ul class="dropdown-menu">
+			                            <li>
+			                                    <a class="cursor-pointer" id="GoChecklistClauseUnsync"><i class="fa fa-chain-broken"></i> Unsynchronize Clause</a>
+			                            </li>
+				                        <li>
+				                            <a href="https://www.contractstandards.com/clauses/detail/304" class="cursor-pointer" target="_blank"><i class="fa fa-external-link"></i> View Full Clause</a>
+				                        </li>
+				                    </ul>
+				        		</span>
+				        		<a href="#">Jump to Standard</a>
+				        	</div>
+				        	<div class="form-group form-group-sm">
+						    	<p><b>Key Question</b>: What information is being exchanged?</p>
+						    </div>
+						    <div class="form-group form-group-sm">
+						    	<div class="row">
+						    		<div class="col-md-6">
+						    			<p>Exchange Agreements <i class="fa fa-angle-down"></i></p>
+						    			<p class="text-muted">Contract Type</p>
+						    		</div>
+						    		<div class="col-md-6">
+						    			<p>Technical Information <i class="fa fa-angle-down"></i></p>
+						    			<p class="text-muted">Answer</p>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="form-group form-group-sm">
+						    	<p>
+						    		<span class="label label-primary"><i class="fa fa-balance-scale"></i> Neutral</span>
+						    		<span class="label label-warning"><i class="fa fa-star"></i> Standard</span>
+						    	</p>
+						    	<div id="new-alternative-text" style="font-size:14px;padding:10px;border-radius:4px;border:1px solid lightgrey">
+						    		<p class="L1 numbered"><b>Confidentiality</b>. Here is some clause language. Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah</p>
+						    	</div>
+						    </div>
+				        </div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+			<!-- <div class="modal fade" id="createAlternative" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">New <b>[CLAUSE TITLE]</b> Alternative</h4>
+					</div>
+					<div class="modal-body">
+				        <div>
+				        	<div class="form-group form-group-sm">
+				        		<button class="btn btn-primary confirm-save-draft">Save as Draft</button>
+				        		<button class="btn btn-success confirm-save">Save</button>
+				        		<button class="btn btn-default cancel-save">Cancel</button>
+				        	</div>
+				        	<div class="form-group form-group-sm">
+						    	<div class="row">
+						    		<div class="col-md-3">
+						    			<label>Key Question</label>
+						    		</div>
+						    		<div class="col-md-9">
+						    			<p class="form-control-static">What is the nature of the Purpose?</p>
+						    		</div>
+						    	</div>
+						    </div>
+						     <div class="form-group form-group-sm">
+						     	<label>Answer * </label>
+						     	<input class="form-control" type="text">
+						     </div>
+						    <div class="form-group form-group-sm">
+						    	<div class="row">
+						    		<div class="col-md-6">
+						    			<label>Contract Type</label>
+						    			<select class="form-control"></select>
+						    		</div>
+						    		<div class="col-md-6">
+						    			<label>Party Weight</label>
+						    			<select class="form-control"></select>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="form-group form-group-sm"><label>Clause Language</label><textarea class="form-control clause-editor"><p class="L1 numbered"><b>Purpose</b>. The parties agree to exchange Confidential Information for the purpose of [DESCRIBE PURPOSE] in accordance with the terms of this agreement.</p></textarea></div>
+				        </div>
+					</div>
+			    </div>
+			  </div>
+			</div> -->
+			<div class="modal fade" id="createNewAlternative" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">New <b>Confidentiality</b> Alternative</h4>
+					</div>
+					<div class="modal-body">
+				        <div>
+				        	<div class="form-group form-group">
+				        		<button class="btn btn-primary confirm-new-alternative-draft">Save as Draft</button>
+				        		<button class="btn btn-success confirm-new-alternative-publish">Save</button>
+				        		<button class="btn btn-default cancel-save">Cancel</button>
+				        	</div>
+				        	<div class="form-group form-group">
+						    	<p><b>Key Question</b>: What information is being exchanged?</p>
+						    </div>
+						    <div class="form-group form-group">
+						    	<input class="form-control" type="text">
+						    	<p class="text-muted">Answer *</p>
+						    </div>
+						    <div class="form-group form-group">
+						    	<div class="row">
+						    		<div class="col-md-6">
+						    			<input class="form-control" type="text">
+						    			<p class="text-muted">Contract Type</p>
+						    		</div>
+						    		<div class="col-md-6">
+						    			<input class="form-control" type="text">
+						    			<p class="text-muted">Party Weight</p>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="form-group form-group">
+						    	<textarea id="new-alternative-text" class="form-control clause-editor">
+						    		<p class="L1 numbered"></p>
+						    	</textarea>
+						    </div>
+				        </div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="syncClause" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Choose <b>Confidentiality</b> Alternative</h4>
+					</div>
+					<div class="modal-body">
+				        <div>
+				        	<div class="form-group form-group-sm">
+				        		<button class="btn btn-success confirm-new-alternative-publish">Sync</button>
+				        		<button class="btn btn-default cancel-save">Cancel</button>
+				        		<a href="#">Jump to Standard</a>
+				        	</div>
+				        	<div class="form-group form-group-sm">
+						    	<p><b>Key Question</b>: What information is being exchanged?</p>
+						    </div>
+						    <div class="form-group form-group-sm">
+						    	<div class="row">
+						    		<div class="col-md-6">
+						    			<p>Exchange Agreements <i class="fa fa-angle-down"></i></p>
+						    			<p class="text-muted">Contract Type</p>
+						    		</div>
+						    		<div class="col-md-6">
+						    			<p>Technical Information <i class="fa fa-angle-down"></i></p>
+						    			<p class="text-muted">Answer</p>
+						    		</div>
+						    	</div>
+						    </div>
+						    <div class="form-group form-group-sm">
+						    	<p>
+						    		<span class="label label-primary"><i class="fa fa-balance-scale"></i> Neutral</span>
+						    		<span class="label label-warning"><i class="fa fa-star"></i> Standard</span>
+						    	</p>
+						    	<div id="new-alternative-text" style="font-size:14px;padding:10px;border-radius:4px;border:1px solid lightgrey">
+						    		<p class="L1 numbered"><b>Confidentiality</b>. Here is some clause language. Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah Blah blah blah</p>
+						    	</div>
+						    </div>
+				        </div>
+					</div>
+			    </div>
+			  </div>
+			</div>
+			<div class="modal fade" id="openLibrary" tabindex="-1" role="dialog">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title">Sync Clause</h4>
+					</div>
+					<div class="modal-body">
+						<table class="table table-hover table-responsive">
+							<thead>
+								<tr>
+									<th>Heading</th>
+									<th></th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="#">Confidentiality</a>
+									</td>
+									<td>
+										<a href="#" class="create-new-alt" data-toggle="modal" data-target="#createNewAlternative">Create New Alt</a>
+									</td>
+									<td>
+										<a href="#" class="sync-clause" data-toggle="modal" data-target="#syncClause">Sync</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">Purpose</a>
+									</td>
+									<td>
+										<a href="#" class="create-new-alt" data-toggle="modal" data-target="#createNewAlternative">Create New Alt</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#syncClause">Sync</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">Governing Law</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#createNewAlternative">Create New Alt</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#syncClausee">Sync</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">Entire Agreement</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#createNewAlternative">Create New Alt</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#syncClause">Sync</a>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="#">Severability</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#createNewAlternative">Create New Alt</a>
+									</td>
+									<td>
+										<a href="#" data-toggle="modal" data-target="#syncClause">Sync</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+			    </div>
+			  </div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="assets/js/tinyMCE/tinymce.min.js"></script>
+		<script src="assets/js/app.js"></script>
+	</body>
+</html>

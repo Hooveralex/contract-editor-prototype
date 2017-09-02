@@ -1,0 +1,165 @@
+
+
+/*Numbering Indentation*/
+p.L1{
+	margin-left: 0px;
+}
+
+p.L2{
+	margin-left: 20px;
+}
+
+p.L3{
+	margin-left: 40px;
+}
+
+p.L4{
+	margin-left: 50px;
+}
+
+p.L5{
+	margin-left: 60px;
+}
+
+p.L6{
+	margin-left: 70px;
+}
+
+p.L7{
+	margin-left: 80px;
+}
+
+p.L8{
+	margin-left: 90px;
+}
+
+p.L9{
+	margin-left: 100px;
+}
+
+p.L10{
+	margin-left: 110px;
+}
+
+/*CSS Auto Numbering*/
+span[class*='pid']{
+	display: none;
+}
+
+#editor{
+	counter-reset: l-one;
+}
+
+/* Necessary to set the CSS counter scope for .clause under .clause-section*/
+.clause-section{
+	counter-reset: l-two;
+}
+
+/*Style: 1. */
+p.L1.numbered {
+	counter-increment: l-one;
+	counter-reset: l-two l-three;
+}
+
+#editor > .clause > p.L1.numbered {
+	counter-reset: l-two l-three;
+}
+
+.clause-editor{
+	counter-reset: l-two;
+}
+
+p.L1.numbered:before {
+	content: counter(l-one) ". ";
+	font-weight:bold;
+}
+
+/*Style: 1.1. */
+p.L2.numbered {
+	counter-increment: l-two;
+	counter-reset: l-three;
+}
+
+p.L2.numbered:before {
+	content: counter(l-one) "." counter(l-two) ".  ";
+	font-weight:bold;
+}
+
+/*Style: (a) */
+p.L3.numbered {
+	counter-increment:l-three;
+	counter-reset: l-four;
+}
+
+p.L3.numbered:before {
+	content: "(" counter(l-three, lower-alpha) ") ";
+}
+
+/*Style: (i) */
+p.L4.numbered{
+	counter-increment: l-four;
+	counter-reset: l-five;
+}
+
+p.L4.numbered:before {
+	content: "(" counter(l-four, lower-roman) ") ";
+}
+
+/*Style: (1) */
+p.L5.numbered{
+	counter-increment: l-five;
+	counter-reset: l-six;
+}
+
+p.L5.numbered:before {
+	content: "(" counter(l-five) ") ";
+}
+
+/*Style: (A) */
+p.L6.numbered{
+	counter-increment: l-six;
+	counter-reset: l-seven;
+}
+
+p.L6.numbered:before {
+	content: "(" counter(l-six, upper-alpha) ")";
+}
+
+/*Style: (I) */
+p.L7.numbered{
+	counter-increment: l-seven;
+	counter-reset: l-eight;
+}
+
+p.L7.numbered:before {
+	content: "(" counter(l-seven, upper-roman) ") ";
+}
+
+/*Style: a. */
+p.L8.numbered{
+	counter-increment: l-eight;
+	counter-reset: l-nine;
+}
+
+p.L8.numbered:before {
+	content: counter(l-eight, lower-alpha) ". ";
+}
+
+/*Style: i. */
+p.L9.numbered{
+	counter-increment: l-nine;
+	counter-reset: l-ten;
+}
+
+p.L9.numbered:before {
+	content: counter(l-nine, lower-roman) ". ";
+}
+
+/*Style: 1. */
+p.L10.numbered{
+	counter-increment: l-ten;
+}
+
+p.L10.numbered:before {
+	content: counter(l-ten) ". ";
+}
