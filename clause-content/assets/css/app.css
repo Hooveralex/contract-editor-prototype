@@ -1,0 +1,163 @@
+body{
+	font-family: "Avenir", "Helvetica", sans-serif;
+	padding-top: 80px;
+	position: relative;
+}
+
+.navbar-cs{
+	background-color: white;
+}
+
+.navbar-cs .navbar-brand{
+	font-family: "Varela Round";
+	color: #000;
+}
+
+.red {
+    color: #c0392b !important;
+}
+
+.landing-block{
+	margin-bottom: 3.5rem;
+}
+
+.landing-block-header{
+	margin-bottom: 2rem;
+}
+
+/*ContractStandards Search Bar*/
+.cs-search-input-landing{
+	width: 100%;
+	border-width: 0px;
+	border-bottom: 2px solid black;
+	font-size: 24px;
+	margin-top: 2rem;
+	margin-bottom: 3.5rem;
+}
+
+.cs-search-input-landing:focus{
+	caret-color: #c0392b;
+	outline: none;
+	border-bottom: 2px solid #c0392b;
+}
+
+/*Organizations on Landing Page*/
+
+.search-organizations-input, .search-organizations-buttons{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/*Org Landing Page*/
+.left-nav-sidebar{
+	border-right: 1px solid #eee;
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 80px;
+    bottom: 0;
+    height: 85vh;
+}
+
+.left-nav-sidebar .content-nav-list > li{
+	margin-bottom: 10px;
+}
+
+.content-nav-list-item.active, .content-nav-list-item.active > a{
+	color: rgb(222, 57, 43);
+	font-weight: bold;
+}
+
+.content-nav-list .content-nav-list-item > a:hover, .content-nav-list-item > a:focus{
+	text-decoration: none;
+}
+
+.content-nav-list .content-nav-list-item.active:before{
+	content: "\f111";
+	font-family: FontAwesome;
+	margin-left: -20px;
+	margin-right: 8px;
+}
+
+/*Mobile*/
+
+.mobile-nav-container{
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	height: 51px;
+	padding: 1rem;
+	z-index: 1;
+	background-color: white;
+	border-top: 1px solid #e7e7e7;
+}
+
+.mobile-nav-container .content-nav-list-item{
+	padding: 0 2rem 0 2rem;
+	font-size: 18px;
+}
+
+.mobile-nav-container .content-nav-list-item > a{
+	color:inherit;
+}
+
+
+/*Clause Panel*/
+.clause-article-content-container{
+	margin-bottom: 200px;
+}
+.clause-panel{
+	border-width: 0;
+	box-shadow: 0 1px 3px 0 grey;
+	cursor: pointer;
+}
+
+.clause-panel > .panel-heading{
+	border-bottom-width: 0px;
+}
+
+.clause-panel > .panel-body{
+	border-top-width: 0px;
+}
+
+.example-notes-panel > .panel-heading{
+	border-bottom: 1px solid #ddd;
+}
+
+#example-nav-container{
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 145px;
+}
+
+.example-nav-list > li.active > a, .example-nav-list > li.active:hover > a{
+	background-color: white;
+	color: rgb(222, 57, 43);
+	border-left: 3px solid rgb(222, 57, 43);
+	border-radius: 0px;
+}
+
+.anchor { 
+  display: block; 
+  margin-top: -60px;
+  height: 60px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
+.clause-more-info-container{
+	min-height: 30px;
+}
+
+.all-tags-body .label{
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.status-icons > .fa{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.standard-icon{
+	color: rgba(250,205,29,85);
+}
