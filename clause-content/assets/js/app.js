@@ -11,6 +11,6 @@ $('.content-nav-list-item > a').click(function(e){
 
 });
 
-$('.clause-panel').click(function(e){
+$('.clause-panel > .panel-heading').click(function(e){
 	$(this).find('.clause-more-info-container').toggleClass('hidden');
 });
