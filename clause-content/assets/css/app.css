@@ -108,11 +108,11 @@ body{
 .clause-panel{
 	border-width: 0;
 	box-shadow: 0 1px 3px 0 grey;
-	cursor: pointer;
 }
 
 .clause-panel > .panel-heading{
 	border-bottom-width: 0px;
+	cursor: pointer;
 }
 
 .clause-panel > .panel-body{
