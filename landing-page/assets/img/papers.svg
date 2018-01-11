@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="410px" height="273px" viewBox="0 0 410 273" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 122 209 24 410 140 200 237"></polygon>
+        <polygon id="path-2" points="0 110 209 12 410 128 200 225"></polygon>
+        <polygon id="path-3" points="0 98 209 0 410 116 200 213"></polygon>
+        <polygon id="path-4" points="0 122 209 24 410 140 200 237"></polygon>
+        <polygon id="path-5" points="0 110 209 12 410 128 200 225"></polygon>
+        <polygon id="path-6" points="0 98 209 0 410 116 200 213"></polygon>
+    </defs>
+    <g id="New-Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graphics" transform="translate(-1158.000000, -1270.000000)">
+            <g id="Group-12" transform="translate(527.000000, 1136.000000)">
+                <g id="Group-5" transform="translate(340.000000, 42.000000)">
+                    <g id="Group-4" transform="translate(291.000000, 92.000000)">
+                        <g id="Group-Copy-4" transform="translate(0.000000, 36.000000)">
+                            <g id="Rectangle-2-Copy-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,122.045112 L200.025076,236.437655 L408.914309,139.950724 L208.976049,24.5634687 L1.08152314,122.045112 Z"></path>
+                            </g>
+                            <g id="Rectangle-2-Copy">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,110.045112 L200.025076,224.437655 L408.914309,127.950724 L208.976049,12.5634687 L1.08152314,110.045112 Z"></path>
+                            </g>
+                            <g id="Rectangle-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,98.0451122 L200.025076,212.437655 L408.914309,115.950724 L208.976049,0.56346866 L1.08152314,98.0451122 Z"></path>
+                            </g>
+                        </g>
+                        <g id="Group">
+                            <g id="Rectangle-2-Copy-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,122.045112 L200.025076,236.437655 L408.914309,139.950724 L208.976049,24.5634687 L1.08152314,122.045112 Z"></path>
+                            </g>
+                            <g id="Rectangle-2-Copy">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,110.045112 L200.025076,224.437655 L408.914309,127.950724 L208.976049,12.5634687 L1.08152314,110.045112 Z"></path>
+                            </g>
+                            <g id="Rectangle-2">
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <path stroke="#34495E" stroke-width="1" d="M1.08152314,98.0451122 L200.025076,212.437655 L408.914309,115.950724 L208.976049,0.56346866 L1.08152314,98.0451122 Z"></path>
+                            </g>
+                        </g>
+                        <g id="Group-2" transform="translate(36.000000, 36.000000)" stroke-width="4" stroke-linecap="round">
+                            <path d="M0.5,70.5 L114.5,15.5" id="Line" stroke="#27AE60"></path>
+                            <path d="M92.5,55.5 L206.5,0.5" id="Line" stroke="#979797"></path>
+                            <path d="M82.5,93.5 L196.5,38.5" id="Line-Copy" stroke="#D35400"></path>
+                            <path d="M204.5,65.5 L90.5,120.5" id="Line-Copy-4" stroke="#979797"></path>
+                            <path d="M296.5,50.5 L182.5,105.5" id="Line-Copy-3" stroke="#979797"></path>
+                            <path d="M286.5,88.5 L172.5,143.5" id="Line-Copy-2" stroke="#F39C12"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
